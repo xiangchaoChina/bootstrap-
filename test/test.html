@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE/edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <title>bootstrap</title>
+    <!-- 导入bootstrap-css -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    div {
+        outline: 1px solid red;
+    }
+</style>
+<body>
+<h1>栅格</h1>
+<div class="container">
+    <!-- 使用row来声明行 -->
+    <div class="row">
+        <!-- 占5份 -->
+        <div class="col-md-5"></div>
+        <!-- 占7份 -->
+        <div class="col-md-7"></div>
+    </div>
+</div>
+
+<h1>列偏移</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-xs-6">
+            1
+        </div>
+        <div class="col-md-2 col-xs-5">
+            1
+        </div>
+        <div class="col-md-4 col-md-offset-4 col-xs-1">
+            1
+        </div>
+    </div>
+</div>
+<h1>列嵌套</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                 <div class="col-md-6">
+                     <img src="../../github/bootstrap/image/tx.jpg">
+                 </div>
+                <div class="col-md-6">
+                      <h1>沙发管家</h1>
+                    <p>111111111111111111111111</p>
+                    <p>111111111111111111111111</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+1
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+2
+        </div>
+
+        <div class="col-md-6">
+2
+        </div>
+    </div>
+</div>
+<h1>列排序</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-xs-push-3">
+            1
+        </div>
+        <div class="col-md-3 col-xs-pull-9">
+            2
+        </div>
+    </div>
+</div>
+<h1>跨设备组合</h1>
+<div class="row">
+    <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8</div>
+    <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+</div>
+<h1>
+div3为什么被卡住
+</h1>
+<div class="row">
+    <div class="col-xs-6 col-sm-3">div1：.col-xs-6 .col-sm-3多加点内容点内容</div>
+    <div class="col-xs-6 col-sm-3">div2：.col-xs-6 .col-sm-3</div>
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3">div3：.col-xs-6 .col-sm-3</div>
+    <div class="col-xs-6 col-sm-3">div4：.col-xs-6 .col-sm-3</div>
+</div>
+
+</body>
+</html>
